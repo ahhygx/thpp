@@ -198,7 +198,7 @@ template <> struct TensorOps<Tensor<real>> {
     return THTensor_(sum)(r, t, dim);
   }
   static void _prod(THTensor* r, THTensor* t, int dim) {
-    return THTensor_(prod)(r, t, dim);
+    return THTensor_(prod)(r, t, dim, 1);
   }
   static void _cumsum(THTensor* r, THTensor* t, int dim) {
     return THTensor_(cumsum)(r, t, dim);
