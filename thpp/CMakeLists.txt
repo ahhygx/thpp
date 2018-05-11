@@ -10,7 +10,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8.7 FATAL_ERROR)
 
 OPTION(NO_THRIFT "enabling this will exclude all code that depends on Thrift from the build" OFF)
 OPTION(NO_FOLLY  "enabling this will exclude all code that depends on Folly from the build" OFF)
-OPTION(NO_TESTS  "enabling this will disable building tests" OFF)
+OPTION(NO_TESTS  "enabling this will disable building tests" ON)
 
 # Torch messes this up
 SET(SAVED_CMAKE_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX})
