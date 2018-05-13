@@ -13,6 +13,7 @@ OPTION(NO_FOLLY  "enabling this will exclude all code that depends on Folly from
 OPTION(NO_TESTS  "enabling this will disable building tests" ON)
 
 # Torch messes this up
+SET(CMAKE_INSTALL_PREFIX /usr/local)
 SET(SAVED_CMAKE_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX})
 
 # Use our own cmake scripts
